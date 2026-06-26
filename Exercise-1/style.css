@@ -1,17 +1,23 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo {
     display: inline-block;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: lighter;
-    width:400px;
+    width:25rem;
 }
 
 nav {
     display: inline-block;
+    margin-left: 10%;
 }
 
 nav ul {
@@ -20,28 +26,30 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 nav a:hover {
-    color: purple;
+    color: #800080;
 }
 
 header {
     position: relative;
-    padding: 5px 50px;
+    top: 0.5rem;
+    padding: 0.3rem 3rem;
+    min-height: 3.75rem;
 }
 
 .profile {
     position: absolute;
-    right: 60px;
-    top: 25px;
-    font-size: 24px;
+    right: 3.75rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .profile:hover {
@@ -54,7 +62,7 @@ header {
 
 .hero img {
     width: 100%;
-    height: 600px; 
+    height: 37.5rem; 
     object-fit: cover;
 }
 
@@ -67,22 +75,25 @@ header {
 }
 
 .hero-title {
-    font-size: 35px;
-    color: white;
+    font-size: 2.5rem;
+    color: #ffffff;
+    line-height: 1.5;
 }
 
 .hero p {
-    color: rgb(129, 104, 129);
+    color: #b578b5;
+    margin-top: 0.6rem;
 }
 
 .hero-content button {
-    background-color: rgb(50, 12, 50);
-    border-radius: 8px;
-    font-size: 11px;
+    background-color: #470647eb;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
     border: none;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
+    margin-top: 0.6rem;
 }
 
 .overlay {
@@ -90,133 +101,138 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 600px;
-    background: rgba(72, 5, 90, 0.40);
+    height: 37.5rem;
+    background: #48055a66;
 }
 
 .box-img {
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
-    border-radius: 5px 5px 0 0;
+    border-radius: 0.3rem 0.3rem 0 0;
     object-fit: cover;
 }
 
 .box {
     display: inline-block;
     text-align: left;
-    vertical-align: top;
-    width: 280px;
-    min-height: 350px;
-    border: 1px solid rgb(217, 204, 204);
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 15px;
+    width: 28%;
+    min-height: 22rem;
+    border: 0.05rem solid #d9cccc;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 1.25rem #0000001a;
+    margin: 1.25rem;
 }
 
 .category,
 .name,
 .description {
-    margin-left: 10px;
-    padding: 5px 10px;
+    margin-left: 0.6rem;
+    padding: 0.3rem 0.6rem;
 }
 
 .category {
-    color: green;
-    font-size: 10px;
+    color: #008000;
+    font-size: 0.6rem;
 }
 
 .name {
-    font-size: 22px
+    font-size: 1.35rem
 }
 
 .description {
-    color: rgb(97, 93, 93);
-    font-size: 13px;
+    color: #615d5d;
+    font-size: 0.8rem;
     line-height: 1.5;
 }
 
 .destination {
-    border-left: 3px solid purple;
+    border-left: 0.2rem solid #800080;
     text-align: left;
-    margin: 20px;
-    padding: 10px;
+    margin: 1.25rem 3.75rem;
+    padding: 0.6rem;
 }
 
 .dest-title {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .destination p {
-    color: rgb(68, 64, 64);
-    font-size: 13px;
+    color: #444040;
+    font-size: 0.8rem;
 }
 
-.container {
-    text-align: center;
+.container{
+    padding:1.25rem;
+}
+
+.cards{
+    text-align:center;
 }
 
 .emotion {
     text-align: center;
-    padding: 50px;
+    padding: 6rem 3rem;
 }
 
 .emotion p{
-    max-width: 700px;
+    max-width: 40.6rem;
     text-align: center;
     margin: auto;
-    padding: 10px;
+    padding: 0.5rem;
+    line-height: 1.5;
 }
 
 .emotion h2 {
-    font-size: 40px;
+    font-size: 2.6rem;
     font-weight: lighter;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    letter-spacing: 1px;
 }
 
 .divider {
-    width: 70px;
-    height: 3px;
-    background-color: rgb(121, 183, 201);
-    margin: 0 auto 40px;
+    width: 4.5rem;
+    height: 0.2rem;
+    background-color: #77d7f4;
+    margin: 0 auto 2.5rem;
 }
 
 footer {
-    background-color: rgb(68, 9, 68);
+    background-color: #3a0c3a;
     position: relative;
-    color: rgb(211, 133, 211);
-    padding: 10px 35px;
-    height: 160px;
+    color: #d385d3;
+    padding: 2rem 3rem;
+    height: 10rem;
 }
 
 .footer-left1 {
-    color: rgb(210, 178, 210);
-    font-size: 20px;
+    color: #d2b2d2;
+    font-size: 1.25rem;
     font-weight: lighter;
-    margin-bottom: 0;
 }
 
 .footer-left2 {
-    margin-top: 7px;
-    font-size: 14px;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 0.5;
 }
 
 .copyrights {
     position: absolute;
-    font-size: 12px;
-    bottom: 30px;
+    font-size: 0.6rem;
+    bottom: 1.5rem;
 }
 
 .icons {
     position: absolute;
-    top: 35px;
-    right: 45px;
+    top: 2rem;
+    right: 3rem;
 }
 .icons i {
-    margin-left: 15px;
+    margin-left: 1rem;
 }
 .right-bot {
-    font-size: 13px;
+    font-size: 0.7rem;
     position: absolute;
-    right: 40px;
-    bottom: 30px;
+    right: 2.5rem;
+    bottom: 1.8rem;
 }
