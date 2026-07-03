@@ -12,12 +12,11 @@ body {
     display: inline-block;
     font-size: 1.5rem;
     font-weight: lighter;
-    width:25rem;
 }
 
 nav {
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 35%;
 }
 
 nav ul {
@@ -47,7 +46,7 @@ header {
 
 .profile {
     position: absolute;
-    right: 3.75rem;
+    right: 3.25rem;
     top: 0.5rem;
     font-size: 1.5rem;
 }
@@ -87,12 +86,12 @@ header {
 
 .hero-content button {
     background-color: #470647eb;
+    padding: 0.75rem 1.25rem;
     border-radius: 0.5rem;
     font-size: 0.75rem;
     border: none;
     color: #ffffff;
     font-weight: bold;
-    padding: 0.75rem 1.25rem;
     margin-top: 0.6rem;
 }
 
@@ -113,14 +112,20 @@ header {
 }
 
 .box {
+    vertical-align: top;
     display: inline-block;
-    text-align: left;
-    width: 28%;
-    min-height: 22rem;
+    width: 31.5%;
+    /* height: 22rem; */
+    font-size: 1rem;
     border: 0.05rem solid #d9cccc;
     border-radius: 0.3rem;
     box-shadow: 0 0.5rem 1.25rem #0000001a;
-    margin: 1.25rem;
+    margin-right: 2.75%;
+    background-color: #ffffff;
+}
+
+.box:last-child {
+    margin-right: 0;
 }
 
 .category,
@@ -143,13 +148,14 @@ header {
     color: #615d5d;
     font-size: 0.8rem;
     line-height: 1.5;
+    padding-bottom: 2rem;
 }
 
 .destination {
     border-left: 0.2rem solid #800080;
     text-align: left;
-    margin: 1.25rem 3.75rem;
-    padding: 0.6rem;
+    padding-left: 0.6rem;
+    margin-bottom: 2rem;
 }
 
 .dest-title {
@@ -162,11 +168,13 @@ header {
 }
 
 .container{
-    padding:1.25rem;
+    padding: 1.25rem 3rem;
+    background-color: #faf9f9;
 }
 
 .cards{
-    text-align:center;
+    font-size: 0;
+    text-align: left;
 }
 
 .emotion {
