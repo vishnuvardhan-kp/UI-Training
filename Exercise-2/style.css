@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #ffffff;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.mail {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mail a {
+    text-decoration: none;
+    color: #6ab8e0;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.role {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+    font-size: 0.7rem;
+    font-weight: 550;
+    background-color: #b6d5e431;
+    color: #6ca9c7;
+}
+
+.name {
+    padding: 0.6rem 0rem;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.border-line {
+    width: 2rem;
+    height: 0.1rem;
+    background-color: #bebaba;
+    margin: 1.5rem auto 1rem;
+}
+
+.hero p {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    color: #948f8f;
+}
+
+/* Image Section */
+.container {
+    display : flex;
+    flex-wrap: wrap;
+    margin: 4rem 2rem;
+    gap: 2rem;
+}
+
+.container img {
+    display: block;
+    flex: 1;
+}
+
+/* Logo Section */
+.logo-title {
+    text-align: center;
+    padding: 5rem;
+    color: #948f8f;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.project-convo {
+    text-align: center;
+    padding: 2rem;
+}
+
+.project-convo p {
+    margin-top: 8rem;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.project-convo a {
+    color: #6ab8e0;
+}
+
+.line {
+    width: 93%;
+    height: 0.01rem;
+    background-color: #393636;
+    margin: 3rem auto;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.social-media {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    border: solid #948f8f;
+    padding: 1rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #ffffff;
+}
