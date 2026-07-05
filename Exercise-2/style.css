@@ -13,8 +13,10 @@ body {
 /* Header Section */
 header {
     display: flex;
-    justify-content: space-between;
     margin: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 .mail {
@@ -45,6 +47,9 @@ header {
 }
 
 .name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0.6rem 0rem;
     font-weight: 600;
     font-size: 3rem;
@@ -60,21 +65,20 @@ header {
 .hero p {
     margin-left: 50%;
     transform: translateX(-50%);
-    width: 50%;
     color: #948f8f;
 }
 
 /* Image Section */
 .container {
+    margin: 4rem 2rem;
     display : flex;
     flex-wrap: wrap;
-    margin: 4rem 2rem;
+    justify-content: center;
     gap: 2rem;
 }
 
-.container img {
-    display: block;
-    flex: 1;
+.container img {    
+    flex: 0 0 calc(33.333% - 1.34rem);
 }
 
 /* Logo Section */
@@ -91,6 +95,24 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
+}
+
+.logos-container img {
+    border: 0.5rem solid #948f8f;
+}
+
+@media (max-width: 30rem) {
+    
+    .logos-container {
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .logos-container img {
+        flex: 0 0 calc(50% - 1rem);
+        border: 0.5rem solid #948f8f;
+        max-width: 10rem;
+    }
 }
 
 .project-convo {
