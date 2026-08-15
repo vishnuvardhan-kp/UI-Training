@@ -1,0 +1,246 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 35%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1.25rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    color: #800080;
+}
+
+header {
+    position: relative;
+    top: 0.5rem;
+    padding: 0.3rem 3rem;
+    min-height: 3.75rem;
+}
+
+.profile {
+    position: absolute;
+    right: 3.25rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.profile:hover {
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 37.5rem; 
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.hero p {
+    color: #b578b5;
+    margin-top: 0.6rem;
+}
+
+.hero-content button {
+    background-color: #470647eb;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0.6rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 37.5rem;
+    background: #48055a66;
+}
+
+.box-img {
+    height: 12.5rem;
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0 0;
+    object-fit: cover;
+}
+
+.box {
+    vertical-align: top;
+    display: inline-block;
+    width: 31.5%;
+    /* height: 22rem; */
+    font-size: 1rem;
+    border: 0.05rem solid #d9cccc;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.5rem 1.25rem #0000001a;
+    margin-right: 2.75%;
+    background-color: #ffffff;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.category,
+.name,
+.description {
+    margin-left: 0.6rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.category {
+    color: #008000;
+    font-size: 0.6rem;
+}
+
+.name {
+    font-size: 1.35rem
+}
+
+.description {
+    color: #615d5d;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+
+.destination {
+    border-left: 0.2rem solid #800080;
+    text-align: left;
+    padding-left: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.dest-title {
+    font-size: 1.5rem;
+}
+
+.destination p {
+    color: #444040;
+    font-size: 0.8rem;
+}
+
+.container{
+    padding: 1.25rem 3rem;
+    background-color: #faf9f9;
+}
+
+.cards{
+    font-size: 0;
+    text-align: left;
+}
+
+.emotion {
+    text-align: center;
+    padding: 6rem 3rem;
+}
+
+.emotion p{
+    max-width: 40.6rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.5rem;
+    line-height: 1.5;
+}
+
+.emotion h2 {
+    font-size: 2.6rem;
+    font-weight: lighter;
+    margin-bottom: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.divider {
+    width: 4.5rem;
+    height: 0.2rem;
+    background-color: #77d7f4;
+    margin: 0 auto 2.5rem;
+}
+
+footer {
+    background-color: #3a0c3a;
+    position: relative;
+    color: #d385d3;
+    padding: 2rem 3rem;
+    height: 10rem;
+}
+
+.footer-left1 {
+    color: #d2b2d2;
+    font-size: 1.25rem;
+    font-weight: lighter;
+}
+
+.footer-left2 {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    line-height: 0.5;
+}
+
+.copyrights {
+    position: absolute;
+    font-size: 0.6rem;
+    bottom: 1.5rem;
+}
+
+.icons {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+.icons i {
+    margin-left: 1rem;
+}
+.right-bot {
+    font-size: 0.7rem;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 1.8rem;
+}
