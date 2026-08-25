@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.909);
+    background-color: #000000e8;
     color: #ffffff;
     font-family: "General Sans", sans-serif;
     margin: 0rem 2rem;
@@ -103,7 +103,7 @@ h1 {
 .hero p {
     margin-left: 50%;
     transform: translateX(-50%);
-    color: rgba(255, 255, 255, 0.621);
+    color: #ffffff9e;
     line-height: 2rem;
     font-size: 1.2rem;
 }
@@ -147,7 +147,8 @@ h1 {
 }
 
 .card {
-    flex: 0 0 calc((100% - 2rem) / 3);
+    /* Use width */
+    flex: 0 0 calc((100% - 2rem) / 3); 
 }
 
 .card img {
@@ -202,7 +203,7 @@ h1 {
 .logo-title {
     text-align: center;
     padding: 4rem;
-    color: rgba(255, 255, 255, 0.621);
+    color: #ffffff9e;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -249,9 +250,9 @@ h1 {
 
 .project-convo a {
     padding: 3rem;
-    color: rgb(118, 185, 207);
+    color: #76b9cf;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .line {
@@ -269,7 +270,7 @@ h1 {
 
     .project-convo a {
         padding: 1rem;
-        color: rgb(118, 185, 207);
+        color: #76b9cf;
         font-weight: 500;
         font-size: 1rem;
     } 

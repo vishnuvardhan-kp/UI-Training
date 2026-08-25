@@ -21,7 +21,7 @@ const triangle = document.getElementById("triangle");
 const square = document.getElementById("square");
 let selectedShape;
 
-// Object : Shape for 
+// Object : Shape
 const shapes = { 
     circle: {
         name : "Circle",
@@ -54,7 +54,7 @@ const shapes = {
     }
 }
 
-
+// Have a single eventListerner that behaves dynamically
 circle.addEventListener("click", () => {
     selectedShape = "circle";
     circle.style.backgroundColor = "#2f854fda";
@@ -76,7 +76,6 @@ square.addEventListener("click", () => {
     triangle.style.borderBottomColor = "#c54192";
 })
 
-
 nextBtn.addEventListener("click", () => {
     if(!selectedShape) {
         alert("Select one of the shapes");
@@ -86,6 +85,7 @@ nextBtn.addEventListener("click", () => {
     homePage.style.display = "none";
     inputPage.style.display = "block";
 
+    // Use dynamic
     if(selectedShape == "circle") {
         radius.style.display = "block";
         side.style.display = "none";
