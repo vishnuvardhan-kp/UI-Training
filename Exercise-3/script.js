@@ -3,28 +3,25 @@ const nextBtn = document.getElementById("nextBtn");
 const backBtn = document.getElementById("backBtn");
 const calcBtn = document.getElementById("calcBtn");
 
-// Heading 
-const side = document.getElementById("side");
-const radius = document.getElementById("radius");
-
-//Input Value
+// Input Value
 const inputValue = document.getElementById("inputValue");
+// Input Heading
+const inputHeading = document.getElementById("inputHeading");
 
 // Pages
 const homePage = document.getElementById("page1");
 const inputPage = document.getElementById("page2");
-const resultPage = document.getElementById("page3")
+const resultPage = document.getElementById("page3");
 
-//Shapes
-const circle = document.getElementById("circle");
-const triangle = document.getElementById("triangle");
-const square = document.getElementById("square");
 let selectedShape;
 
 // Object : Shape
-const shapes = { 
+const shapes = {
     circle: {
         name : "Circle",
+        type : "circle",
+        color : "#2f854f",
+        colorProperty : "backgroundColor",
         inputLabel : "Radius",
         inputFormula : "r",
         areaFormula : "&pi; r<sup>2</sup>",
@@ -35,6 +32,9 @@ const shapes = {
 
     triangle: {
         name : "Equilateral Triangle",
+        type : "triangle",
+        color : "#c54192",
+        colorProperty : "borderBottomColor",
         inputLabel : "Side",
         inputFormula : "s",
         areaFormula : "0.433*s*s",
@@ -45,6 +45,9 @@ const shapes = {
 
     square: {
         name : "Square",
+        type : "square",
+        color : "#186757",
+        colorProperty : "backgroundColor",
         inputLabel : "Side",
         inputFormula : "s",
         areaFormula : "s*s",
@@ -54,26 +57,24 @@ const shapes = {
     }
 }
 
-// Have a single eventListerner that behaves dynamically
-circle.addEventListener("click", () => {
-    selectedShape = "circle";
-    circle.style.backgroundColor = "#2f854fda";
-    triangle.style.borderBottomColor = "#c54192";
-    square.style.backgroundColor = "#186757";
-})
+const shapesContainer = document.getElementById("shapesContainer");
+Object.entries(shapes).forEach(([key, shape]) => {
+    const element = document.createElement("div");
+    element.className = shape.type;
+    element.id = shape.type;
+    element.style[shape.colorProperty] = shape.color;
+    shapesContainer.appendChild(element);
+});
 
-triangle.addEventListener("click", () => {
-    selectedShape = "triangle";
-    triangle.style.borderBottomColor = "#c54192da";
-    circle.style.backgroundColor = "#2f854f";
-    square.style.backgroundColor = "#186757";
-})
-
-square.addEventListener("click", () => {
-    selectedShape = "square";
-    square.style.backgroundColor = "#186757c7";
-    circle.style.backgroundColor = "#2f854f";
-    triangle.style.borderBottomColor = "#c54192";
+shapesContainer.addEventListener("click", (event) => {
+    const element = event.target;
+    if(!shapes[element.id]) return;
+    // Remove previous selection
+    shapesContainer.querySelector(".selected")?.classList.remove("selected");
+    // Highlight current selection
+    element.classList.add("selected");
+    // Saving the selected Shape
+    selectedShape = element.id;
 })
 
 nextBtn.addEventListener("click", () => {
@@ -81,18 +82,12 @@ nextBtn.addEventListener("click", () => {
         alert("Select one of the shapes");
         return;
     }
-
+    
+    const shape = shapes[selectedShape];
     homePage.style.display = "none";
     inputPage.style.display = "block";
-
-    // Use dynamic
-    if(selectedShape == "circle") {
-        radius.style.display = "block";
-        side.style.display = "none";
-    } else {
-        side.style.display = "block";
-        radius.style.display = "none";
-    }
+    
+    inputHeading.textContent = `2. Enter ${shape.inputLabel}`;
 })
 
 backBtn.addEventListener("click", () => {
@@ -103,7 +98,7 @@ backBtn.addEventListener("click", () => {
 
 calcBtn.addEventListener("click", () => {
     const input = Number(inputValue.value);
-
+    
     if(input <= 0) {
         alert("Input must be greater than 0");
         return;
@@ -111,10 +106,14 @@ calcBtn.addEventListener("click", () => {
 
     inputPage.style.display = "none";
     resultPage.style.display = "block";
-    const shape = shapes[selectedShape];
     
+    const shape = shapes[selectedShape];
+    renderResult(shape,input);
+})
+
+function renderResult(shape, input) {
     resultPage.innerHTML = `
-        <div class="${selectedShape}"></div>
+        <div class="${shape.type}"></div>
         <div class="heading">${shape.name}</div>
         
         <table class="result-table">
@@ -144,12 +143,10 @@ calcBtn.addEventListener("click", () => {
             resultPage.style.display = "none";
             resetValues();
     });
-})
+}
 
 function resetValues() {
     selectedShape = null;
     inputValue.value = 5;
-    circle.style.backgroundColor = "#2f854f";
-    triangle.style.borderBottomColor = "#c54192";
-    square.style.backgroundColor = "#186757";
+    shapesContainer.querySelector(".selected")?.classList.remove("selected");
 }
