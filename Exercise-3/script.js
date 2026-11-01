@@ -61,7 +61,9 @@ const shapesContainer = document.getElementById("shapesContainer");
 Object.entries(shapes).forEach(([key, shape]) => {
     const element = document.createElement("div");
     element.className = shape.type;
-    element.id = shape.type;
+    element.id = key;
+    // We use colorProperty because triangle's color is from the bottom border
+    // We use borderBottomColor for triangle and for other we use backgroundColor
     element.style[shape.colorProperty] = shape.color;
     shapesContainer.appendChild(element);
 });
