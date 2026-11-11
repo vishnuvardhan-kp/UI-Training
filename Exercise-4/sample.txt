@@ -1,0 +1,53 @@
+{
+  "media": {
+    "video": "https://res.cloudinary.com/dpqthoi0j/video/upload/v1794124294/video.mp4",
+    "profilename": "albert camus",
+    "profilelogo": "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124279/pfp1.png"
+  },
+  "bookInfo": {
+    "title": "THE SETTING SUN",
+    "description": "Osamu Dazai’s The Setting Sun (translated by Juliet Winters Carpenter, review copy courtesy of the publisher) is set just after the end of the Second World War. Kazuko is a twenty-nine-year-old woman from a family of noble blood whose fortunes have declined, and when her mother is forced to sell their Tokyo home, she takes herself and Kazuko off to a small cottage in the countryside. The two women gamely put on a brave front, with Kazuko especially determined to enjoy life away from the city."
+  },
+  "comments": [
+    {
+      "username": "Elizabeth Bennet",
+      "profileImage": "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124280/image1.png",
+      "comment": "I found Kazuko fascinating. She is caught between the life expected of her and the life she actually wants, and I couldn't help but admire her stubbornness."
+    },
+    {
+      "username": "Holden Caulfield",
+      "profileImage": "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124282/image2.png",
+      "comment": "Everyone keeps pretending everything is fine when it obviously isn't. That's probably the part of the book I understood the most."
+    },
+    {
+      "username": "Jay Gatsby",
+      "profileImage": "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124282/image3.png",
+      "comment": "There is something strangely beautiful about watching people hold on to a world that is already disappearing. I know something about that."
+    },
+    {
+      "username": "Jo March",
+      "profileImage": "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124283/image4.png",
+      "comment": "Kazuko's refusal to simply accept the life chosen for her really stayed with me. She wants to become someone on her own terms."
+    },
+    {
+      "username": "Santiago",
+      "profileImage": "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124285/image5.png",
+      "comment": "The interesting part is not merely that the family is declining, but why each member responds to that decline so differently. Human nature is rarely as orderly as a case."
+    },
+    {
+      "username": "Guy Montag",
+      "profileImage": "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124285/image6.png",
+      "comment": "The old world is disappearing, but that does not necessarily mean something worse has to replace it. Sometimes destruction is the beginning of choosing what comes next."
+    },
+    {
+      "username": "Prince Lev Myshkin",
+      "profileImage": "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124285/image6.png",
+      "comment": "A sad book about people who desperately need love but keep hurting each other because they do not know how to love. I felt sorry for all of them."
+    }
+  ],
+  "sidebarImages": [
+    "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124290/dorian-gray.png",
+    "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124289/the-death-of-ivan-ilych-26_1.png",
+    "https://res.cloudinary.com/dpqthoi0j/image/upload/v1794124291/myth-of-sisyphus.png"
+  ]
+}
